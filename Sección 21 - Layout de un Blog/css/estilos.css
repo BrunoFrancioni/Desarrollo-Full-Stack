@@ -1,0 +1,300 @@
+/** Box-sizing **/
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/** Fin Box-sizing **/
+
+.body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 16px;
+    line-height: 2;
+}
+
+.boton {
+    background-color: #00b8e4;
+    padding: 10px 30px;
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color .3s ease-in-out;
+}
+.boton:hover {
+    background-color: #003d4d;
+}
+
+.site-header {
+    padding: 20px 0px 20px 0px;
+}
+
+/** El 'contenedor' lo voy a usar para ubicar todo el contenido de la página en el lugar que quiero. Alineando el header con el contenido en el mismo ancho. **/
+.contenedor {
+    max-width: 1200px;
+    margin: 0px auto;
+    overflow: auto;
+}
+
+/** Grid **/
+
+@media(min-width:768px) {
+    .grid {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .centrar-columnas {
+        justify-content: center;
+    }
+
+    .columnas-6 {
+        flex: 0 0 calc(50% - 1rem);
+    }
+
+    .columnas-4 {
+        flex: 0 0 calc(33.3% - 1rem);
+    }
+
+    .columnas-8 {
+        flex: 0 0 calc(66.6% -1rem);
+    }
+
+    .columnas-10 {
+        flex: 0 0 calc(83.3% - 1rem);
+    }
+
+    .columnas-12{
+        flex: 0 0 100%;
+    }
+}
+
+/** Navegación Responsive **/
+
+.barra {
+    overflow: hidden;
+}
+
+.mobile-menu {
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    padding: 20px 0;
+}
+
+#nav:target {
+    max-height: 800px;
+}
+
+.navegacion-principal {
+    max-height: 0;
+    transition: .5s;
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal {
+        max-height: unset;
+    }
+    .mobile-menu,
+    .cerrar {
+        display: none!important;
+    }
+}
+
+/** Navegacion **/
+
+.barra {
+    background-color: #db008b;
+    margin-top: 30px;
+}
+
+.navegacion-principal a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    display: block;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (min-width: 768px){
+    .navegacion-principal a {
+        display: inline-block;
+        margin-right: 20px;
+    }
+}
+
+.navegacion-principal a:hover {
+    background-color: #00b8e4;
+}
+
+/** Contenedores principales **/
+/** Main y sidebar **/
+
+.contenido-principal {
+    margin-top: 30px;
+}
+
+.contenido-principal,
+.sidebar {
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .contenido-principal {
+        width: 70%;;
+        float: left;
+        padding-right: 0px 60px 0px 0px;
+    }
+    
+    .sidebar {
+        width: 30%;
+        float: right;
+        padding: 0px;
+        margin-top: 30px;
+    }
+}
+
+/** Entradas de blog **/
+
+h2 {
+    color: #00b8e4;
+    margin-bottom: 20px;
+}
+
+.entrada {
+    margin-top: 30px;
+}
+
+.entrada:last-of-type {
+    margin-bottom: 0;
+}
+
+.entrada img {
+    display: block;
+}
+@media (min-width: 400px) {
+    .entrada img {
+        width: 300px;
+        float: left;
+        margin: 0px 30px 30px 0px;
+    }
+}
+
+.entrada p {
+    text-align: justify;
+}
+
+/** Sidebar **/
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    padding: 10px;
+}
+.sidebar ul li:hover {
+    background-color: #00b8e4;
+}
+.sidebar ul li a {
+    color: #00b8e4;
+    font-size: 18px;
+    text-decoration: none;
+}
+.sidebar ul li:hover a {
+    color: #ffffff;
+}
+
+/** Footer **/
+
+.footer-sitio {
+    background-color: #db008b;
+    padding-top: 40px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer-sitio h2 {
+    color: #ffffff;
+}
+
+.footer-sitio a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+.footer-sitio a:last-of-type{
+    margin-right: 0;
+}
+
+@media (min-width: 768px) {
+    .footer-sitio .nosotros {
+        float: left;
+        width: 30%;
+        text-align: left;
+        overflow: auto;
+    }
+    .footer-sitio .menu {
+        float: right;
+        width: 50%;
+        text-align: right;
+        overflow: auto;
+    }
+}
+
+.copyright {
+    background-color: #91005c;
+    margin-top: 50px 0 0 0;
+    padding: 20px 0;
+}
+
+/** Contacto **/
+
+.formulario-contacto {
+    background-color: #ffffff;
+    padding: 5rem;
+}
+
+@media (min-width: 767px){
+    .formulario-contacto {
+        margin-top: -10rem;
+    }
+}
+
+.formulario-contacto .campo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.formulario-contacto .campo label {
+    flex: 0 0 8rem;
+}
+
+.formulario-contacto .campo input:not([type="submit"]),
+.formulario-contacto textarea {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
+
+.formulario-contacto textarea {
+    height: 20rem;
+}
+
+.formulario-contacto .enviar {
+    display: flex;
+    justify-content: flex-end;
+}

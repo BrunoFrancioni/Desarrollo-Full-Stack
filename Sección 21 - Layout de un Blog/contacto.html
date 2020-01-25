@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Blog de Viajes</title>
+</head>
+
+<body>
+    <header class="site-header contenedor">
+        <img src="img/logo.png" alt="logotipo">
+    </header>
+    
+    <div class="barra">
+        <a href="#nav" class="mobile-menu">
+            <i class="fas fa-ellipsis-v"></i>
+        </a>
+
+        <nav id="nav" class="navegacion-principal contenedor">
+            <a href="#">Inicio</a>
+            <a href="nosotros.html">Nosotros</a>
+            <a href="cursos.html">Blog</a>
+            <a href="#">Tienda</a>
+            <a href="contacto.html">Contacto</a>
+
+            <a href="#" class="cerrar">
+                <i class="fas fa-times"></i>
+            </a>
+        </nav>
+    </div>
+
+    <main class="contenedor">
+        <h2 class="centrar-texto">Contacto</h2>
+        <div class="grid centrar-columnas">
+            <div class="columnas-12">
+                <img src="img/contacto.jpg" alt="Imagen Contacto">
+            </div>
+
+            <div class="columnas-10 formuario-contacto">
+                <form action="#">
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" placeholder="Tu Nombre">
+                    </div>
+                    <div class="campo">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Tu Email">
+                    </div>
+                    <div class="campo mensaje">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje"></textarea>
+                    </div>
+                    <div class="campo enviar">
+                        <input type="submit" value="Enviar" class="btn btn-primario">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-sitio">
+        <div class="contenedor">
+            <section class="nosotros">
+                <h2>Sobre Nosotros</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat nesciunt, eius neque, adipisci accusamus nulla.</p>
+            </section>
+
+            <section class="menu">
+                <h2>Menú de Navegación</h2>
+                <nav>
+                    <a href="#">Inicio</a>
+                    <a href="#">Nosotros</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Tienda</a>
+                    <a href="#">Contacto</a>
+                </nav>
+            </section>
+        </div>
+
+        <p class="copyright">BlogDeViajes - Todos los derechos reservados 2019 &copy;</p>
+    </footer>
+</body>
+</html>

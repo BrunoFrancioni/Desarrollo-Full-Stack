@@ -1,0 +1,108 @@
+html {
+    height: 100%;
+    box-sizing: border-box
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e570e5+0,2989d8+50,c85ec7+50,a849ae+100 */
+    background: #e570e5; /* Old browsers */
+    background: -moz-linear-gradient(top,  #e570e5 0%, #2989d8 50%, #c85ec7 50%, #a849ae 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #e570e5 0%,#2989d8 50%,#c85ec7 50%,#a849ae 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #e570e5 0%,#2989d8 50%,#c85ec7 50%,#a849ae 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e570e5', endColorstr='#a849ae',GradientType=0 ); /* IE6-9 */
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.hero {
+    margin-bottom: 40px;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.lista-productos {
+    padding: 0;
+    list-style: none;
+}
+
+.lista-productos li {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+.lista-productos li:nth-child(2n+1) {
+    clear: both;
+}
+
+@media (min-width: 768px) {
+    .lista-productos li {
+        width: 200px;
+    }
+
+    .lista-productos li:nth-child(2n+1) {
+        clear: unset;
+    }
+
+    .lista-productos li:nth-child(3n+1) {
+        clear: both;
+    }
+}
+
+.lista-productos li img {
+    border: 10px solid rgba(128, 1, 195, .45);
+    transition: border-color .3s ease-in-out;
+}
+
+.lista-productos li img:hover {
+    border: 10px solid rgba(128, 1, 195, 1);
+}
+
+.lista-productos li p {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+.lista-productos li p span {
+    color: #FFCE00;
+    font-size: 40px;
+}
+
+.boton {
+    background-color: #FFCE00;
+    padding: 10px 40px;
+    margin-top: 10px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: #8001c3;
+    transition: background-color .3s ease-in-out;
+}
+
+.boton:hover {
+    background-color: #ebbc00;
+}
