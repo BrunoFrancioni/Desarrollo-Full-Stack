@@ -1,0 +1,23 @@
+/** Teléfonos **/
+
+@media (min-width: 576px) {
+
+}
+
+/** Tablets **/
+
+@media (min-width: 768px) {
+
+}
+
+/** Laptops y Computadoras **/
+
+@media (min-width: 992px) {
+
+}
+
+/** Televisiones **/
+
+@media (min-width: 1200px) {
+
+}
