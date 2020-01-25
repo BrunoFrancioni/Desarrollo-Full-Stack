@@ -1,0 +1,201 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    min-height: 100vh;
+}
+
+
+/*
+=============================================
+    HEADER
+=============================================
+*/
+.contenido-header {
+    background-image: url(../img/calculator-1680905_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 15rem;
+}
+
+h1.texto-header {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 5rem;
+    font-size: 50px;
+    font-weight: bold;
+    -webkit-text-stroke: 2px white;
+}
+
+/*
+=============================================
+    CONTENIDO CENTRAL
+=============================================
+*/
+
+.contenido-principal {
+    display: flex;
+    margin-top: 2rem;
+}
+
+main {
+    margin-bottom: 20px;
+}
+
+main div {
+    flex-basis: 66.6%;
+}
+
+/*
+=============================================
+    TABLA ASIENTOS
+=============================================
+*/
+
+
+table.table {
+    font-size: 13px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+thead.thead {
+    align-items: center center;
+}
+
+th.fecha,
+th.numero-asiento,
+th.concepto,
+th.debe,
+th.haber {
+    text-transform: uppercase;
+}
+
+th.fecha,
+th.numero-asiento,
+th.debe,
+th.haber {
+    width: 10%;
+}
+
+tr th.fecha {
+    font-weight: 700;
+}
+
+td.identar {
+    text-indent: 200px;
+}
+
+tr.ultima-linea {
+    border-bottom: 3px solid black;
+}
+
+button.boton-agregar {
+    float: right;
+}
+
+/*
+=============================================
+    AGREGAR ASIENTO
+=============================================
+*/
+
+div.modal-header h5 {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+div.opciones-modal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sumar-restar button i {
+    font-size: 15px;
+}
+
+.tbody-add tr td input {
+    width: 100%;
+}
+
+/*
+=============================================
+    PLAN CUENTAS
+=============================================
+*/
+
+.código-cuenta {
+    width: 5%;
+}
+
+.nombre-cuenta {
+    width: 35%;
+}
+
+.tipo-cuenta {
+    width: 15%;
+}
+
+/*
+=============================================
+    MAYOR
+============================================
+*/
+
+div.tabla-mayor {
+    text-align: center;
+}
+
+.tabla-mayor h2 {
+    font-weight: bold;
+}
+
+
+
+
+/*
+=============================================
+    MENU LATERAL
+=============================================
+*/
+
+.aside-menu {
+    list-style: none;
+    margin-top: 10px;
+}
+
+a.nav-link {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+/*
+=============================================
+    FOOTER
+=============================================
+*/
+
+footer.site-footer {
+    background-color: black;
+    height: 60px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+p.copyright {
+    font-size: 15px;
+    color: white;
+    padding-top: 40px;
+    margin-right: 5px;
+    float: right;
+}

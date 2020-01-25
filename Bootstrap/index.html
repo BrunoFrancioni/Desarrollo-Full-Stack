@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Google Fonts y Font Awesome-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="contenido-header" role="banner">
+      <div class="container-fluid">
+          <h1 class="texto-header">Sistema de gestión de asientos</h1>
+      </div>
+    </header>
+
+    <div class="contenido-principal container">
+        <main class="container" role="main">
+            <div id="tabla-asientos">
+              <table class="table table-bordered table-hover">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th id="fecha" class="fecha" scope="col">Fecha</th>
+                      <th id="numero-asiento" class="numero-asiento" scope="col">Número Asiento</th>
+                      <th id="concepto" class="concepto" scope="col">Concepto</th>
+                      <th id="debe" class="debe" scope="col">Debe</th>
+                      <th id="haber" class="haber" scope="col">Haber</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <div class="asiento">
+                      <tr>
+                        <th scope="row">17/10/2019</th>
+                        <td>1</td>
+                        <td>Caja</td>
+                        <td>5000</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td>Valores a depositar</td>
+                        <td>2000</td>
+                        <td></td>
+                      </tr>
+                      <tr class="ultima-linea">
+                        <th scope="row"></th>
+                        <td></td>
+                        <td class="identar">Mercaderías</td>
+                        <td></td>
+                        <td>7000</td>
+                        </tr>
+                      </div>
+
+                    <div class="asiento">
+                      <tr>
+                        <th scope="row">18/10/2019</th>
+                        <td>2</td>
+                        <td>Caja</td>
+                        <td>5000</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td>Valores a depositar</td>
+                        <td>2000</td>
+                        <td></td>
+                      </tr>
+                      <tr class="ultima-linea">
+                        <th scope="row"></th>
+                        <td></td>
+                        <td class="identar">Mercaderías</td>
+                        <td></td>
+                        <td>7000</td>
+                      </tr>
+                    </div>
+
+                    <div class="asiento">
+                      <tr>
+                        <th scope="row">19/10/2019</th>
+                        <td>3</td>
+                        <td>Caja</td>
+                        <td>5000</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td>Valores a depositar</td>
+                        <td>2000</td>
+                        <td></td>
+                      </tr>
+                      <tr class="ultima-linea">
+                        <th scope="row"></th>
+                        <td></td>
+                        <td class="identar">Mercaderías</td>
+                        <td></td>
+                        <td>7000</td>
+                        </tr>
+                    </div>
+
+                    <div class="asiento">
+                      <tr>
+                        <th scope="row">20/10/2019</th>
+                        <td>4</td>
+                        <td>Caja</td>
+                        <td>5000</td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th scope="row"></th>
+                        <td></td>
+                        <td>Valores a depositar</td>
+                        <td>2000</td>
+                        <td></td>
+                      </tr>
+                      <tr class="ultima-linea">
+                        <th scope="row"></th>
+                        <td></td>
+                        <td class="identar">Mercaderías</td>
+                        <td></td>
+                        <td>7000</td>
+                      </tr>
+                    </div>
+                  </tbody>
+              </table>
+            </div>
+
+            <!--Modal Agregar Asiento-->
+            <div class="modal fade" id="agregar-asiento" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Agregar Asiento</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div> <!--Modal Header-->
+
+                  <div class="modal-body">
+                    <form>
+                      <table class="table table-bordered table-hover">
+                        <thead class="thead-dark">
+                          <tr>
+                            <th id="fecha" class="fecha" scope="col">Fecha</th>
+                            <th id="numero-asiento" class="numero-asiento" scope="col">Número Asiento</th>
+                            <th id="concepto" class="concepto" scope="col">Concepto</th>
+                            <th id="debe" class="debe" scope="col">Debe</th>
+                            <th id="haber" class="haber" scope="col">Haber</th>
+                          </tr>
+                        </thead>
+          
+                        <tbody class="tbody-add">
+                            <tr class="linea">
+                              <th scope="row">17/10/2019</th> <!--Fecha-->
+                              <td>1</td> <!--Numero Asiento-->
+                              <td><input type="text" placeholder="Concepto" class="concepto form-control"></td> <!--Concepto-->
+                              <td><input type="text" placeholder="Debe" class="form-control"></td> <!--Debe-->
+                              <td><input type="text" placeholder="Haber" class="form-control"></td> <!--Haber-->
+                            </tr>
+                        </tbody>
+                      </table>
+                    </form>
+
+                    <div class="opciones-modal">
+                      <div class="sumar-restar">
+                        <button id="boton-add" class="btn button"><i class="fas fa-plus"></i></button>
+                        <button id="boton-less" class="btn button"><i class="fas fa-minus-circle"></i></button>
+                      </div>
+                      <button id="boton-calcular" class="btn button btn-dark">Calcular</button>
+                    </div>
+                  </div> <!--Modal Body-->
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="submit" id="guardar-asiento" class="btn btn-primary" disabled="disabled">Guardar Asiento</button>
+                  </div> <!--Modal Footer-->
+                </div> <!--Modal Content-->
+              </div> <!--Modal Dialog-->
+            </div> <!--Modal Agregar Asiento-->
+
+
+          <button type="button" class="btn btn-secondary btn-lg boton-agregar" data-toggle="modal" data-target="#agregar-asiento">Agregar Asiento</button>
+
+        </main>
+
+        <aside role="complementary">
+            <nav class="navbar" role="navegation">
+                <ul class="nav flex-column nav-justified">
+                    <li class="nav-item">
+                        <a href="index.html" class=" btn nav-link btn-secondary" role="button">Asientos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="libromayor.html" class="btn nav-link btn-secondary" role="button">Libro Mayor</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="plancuentas.html" class="btn nav-link btn-secondary" role="button">Plan de Cuentas</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+    </div>
+
+
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!--jQuery-->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+
+    <!--Javascript-->
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>
